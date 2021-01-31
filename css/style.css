@@ -1,0 +1,540 @@
+/* Проверка гита*/
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 16px;
+    color: #000000;
+    font-weight: 400;
+    background-color: #f2f2f2;
+}
+a{
+    text-decoration: none;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+} 
+.button{
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #84d5ff;
+    text-transform: lowercase;
+}
+
+.button:hover,
+.button:focus{
+    background-color: #2b3189;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    padding-top:38px;
+    padding-bottom: 30px;
+    padding-left: 160px;
+    padding-right: 165px;
+    background-image: url('../img/wave-1.png');
+    background-repeat: no-repeat;
+}
+.wrapper-button{
+    display: flex;
+}
+.wrapper-button .button-header{
+    display: block;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 3px;
+    margin-left: 15px;
+}
+.ad-vitamin-1{
+    display: flex;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f0f4fb;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 185px;
+    background-image: url('../img/wave-2.png');
+    background-repeat: no-repeat;
+}
+.wrapper-ad-1{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+.button-ad{
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #2b3189;
+    text-transform: lowercase;
+}
+.wrapper-ad-1 .button-1{
+    display: block;
+    width: 195px;
+    padding-left: 60px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 3px;
+}
+.ad-vitamin-1 h3,
+.ad-vitamin-2 h3,
+.buy-title{
+    font-family: 'Times New Roman', Arial, serif;
+    font-size: 48px;
+    font-weight: 300;
+    color: #2b2b2f;
+    margin:0;
+}
+.ad-vitamin-1 p{
+    color: #838388;
+    margin:0;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.usefulness,
+.advantages,
+.catalog{
+    background-color: #ffffff;
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.usefulness-title,
+.advantages-title,
+.catalog-title{
+    margin: 0px;
+    font-family: 'Times New Roman', Arial, serif;
+    font-size: 42px;
+    font-weight: 300;
+    color: #2b2b2f;
+}
+.usefulness{
+    display: flex;
+    flex-direction: column;
+    background-image: 
+    url('../img/advantages.jpg'),
+    url('../img/wave-3.png');
+    background-repeat: 
+    no-repeat,
+    no-repeat;
+    background-position: 
+    550px 50px,
+    0px 0px;
+}
+.usefulness-title{
+    padding-left: 160px;
+    padding-top: 100px;
+    padding-bottom: 79px;
+}
+.benefit-items{
+    margin: 0px;
+    padding: 0px;
+    padding-left: 140px;
+    list-style: none;
+}
+.benefit-item{
+    width: 375px;
+    margin-bottom: 25px;
+    font-size: 24px;
+    font-weight: 300;
+    color: #838388;
+}
+.benefit-item::before{
+    content: "•";
+    font-weight: 700;
+    color: #98dbff;
+    padding-right: 10px;
+}
+.benefit-item:nth-child(1)::before{
+    color: #8ce2db;
+}
+.benefit-item:nth-child(3)::before{
+    color: #f9e389;
+}
+.benefit-item:nth-child(5)::before{
+    color: #fed5cf;
+}
+.advantages{
+    display: flex;
+    flex-direction: column;
+    background-image: url('../img/wave-3.png');
+    background-repeat: no-repeat;
+    background-position: -5px -560px;
+}
+.advantages-title{
+    padding-top: 100px;
+    padding-bottom: 90px;
+    padding-left: 140px;
+}
+.advantages-items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    padding-left: 145px;
+}
+.advantages-item{
+    box-sizing: border-box;
+    width: 380px;
+    line-height: 20px;
+    color: #838388;
+    margin-right: 130px;
+    margin-bottom: 100px;
+    padding-left: 190px;
+    padding-bottom: 65px;
+}
+.advantages-item:nth-child(1){
+    background-image: url('../img/fish.png');
+    background-repeat: no-repeat;
+}
+.advantages-item:nth-child(2){
+    background-image: url('../img/bank.png');
+    background-repeat: no-repeat;
+}
+.advantages-item:nth-child(3){
+    background-image: url('../img/cup.png');
+    background-repeat: no-repeat;
+}
+.advantages-item:nth-child(4){
+    background-image: url('../img/island.png');
+    background-repeat: no-repeat;
+}
+.catalog{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-left: 140px;
+    background-image: url('../img/wave-4.png');
+    background-repeat: no-repeat;
+    background-position: 0px 880px;
+}
+.catalog p{
+    color: #838388;
+    margin:0;
+    margin-top: 35px;
+    padding-bottom: 90px;
+}
+.catalog-items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 250px;
+}
+.catalog-item{
+    margin-right: 110px;
+    margin-bottom: 90px;
+}
+.catalog-item:nth-child(3n){
+    margin-right: 0px;
+}
+.catalog-item h3{
+    margin: 0;
+    margin-top: 45px;
+    font-size: 24px;
+    color: #2b2b2f;
+}
+.catalog-item p{
+    margin: 0;
+    width: 200px;
+    padding: 0px;
+    margin-bottom: 30px;
+}
+.catalog-item .discription{
+    margin-bottom: 15px;
+    color: #2b2b2f;
+}
+.catalog-item:nth-child(6) p{
+    margin-bottom: 132px;
+}
+.catalog-item:nth-child(6) h3{
+    margin-top: 35px;
+}
+.catalog-item .button-order{
+  display: block;
+  width: 140px;
+  padding-left: 70px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-radius: 3px;
+}
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    width: 1280px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f0f4fb;
+    padding-left: 170px;
+    padding-right: 180px;
+    padding-top: 450px;
+    background-image: url('../img/wave-5.png');
+    background-repeat: no-repeat;
+    background-position: 0px 120px;
+}
+.about-video{
+    position: absolute;
+    top: -200px;
+    background-color: #2b2b2f;
+}
+.wrapper-about{
+    box-sizing: border-box;
+    width: 545px;
+}
+.wrapper-about p{
+    line-height: 20px;
+    color: #2b2b2f;
+}
+.about-items{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 100px;
+    margin-bottom: 90px;
+}
+.about-item{
+    box-sizing: border-box;
+    width: 380px;
+    line-height:  20px;
+    color:#838388;
+    padding-left: 160px;
+    padding-bottom: 60px;
+    margin-right: 100px;
+    margin-bottom: 80px;
+}
+.about-item:nth-of-type(2n){
+    margin-right: 0px;
+}
+.about-item:nth-of-type(1){
+    background-image: url('../img/mountains.png');
+    background-repeat: no-repeat;
+}
+.about-item:nth-of-type(2){
+    background-image: url('../img/vitamin.png');
+    background-repeat: no-repeat;
+}
+.about-item:nth-of-type(3){
+    background-image: url('../img/medal.png');
+    background-repeat: no-repeat;
+}
+.about-item:nth-of-type(4){
+    background-image: url('../img/flask.png');
+    background-repeat: no-repeat;
+}
+.ad-vitamin-2{
+    display: flex;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #c5e8fd;
+    padding-top: 80px;
+    padding-bottom: 170px;
+    padding-left: 180px;
+    background-image: url('../img/wave-6.png');
+    background-repeat: no-repeat;
+    background-position: 0px -120px;
+}
+.wrapper-ad-2{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.wrapper-ad-2 p{
+    width: 385px;
+    font-size: 24px;
+    line-height: 29px;
+    color: #2b2b2f;
+    font-weight: 300;
+    margin: 0px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.wrapper-ad-2 .button-2{
+    display: block;
+    box-sizing: border-box;
+    width: 130px;
+    padding-left: 30px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 3px;
+}
+.buy{
+    width: 1280px;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f0f4fb;
+}
+.buy-title{
+    margin: 0px;
+    padding-left: 140px;
+    padding-top: 90px;
+}
+.buy-items{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+    padding-left: 140px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    list-style: none;
+}
+.buy-item{
+    margin-bottom: 40px;
+    margin-right: 90px;
+}
+.buy-item a{
+    display: block;
+    color: transparent;
+}
+.ozon a{
+    background-image: url('../img/logo-ozon-dark.png');
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+    padding-right: 120px;
+}
+.ozon a:hover,
+.ozon a:focus{
+    background-image: url('../img/logo_ozon.png');
+    background-repeat: no-repeat;  
+}
+.aloeapteka a{
+    background-image: url('../img/logo-aloeapteka-dark.png');
+    background-repeat: no-repeat;  
+    padding-bottom: 50px;
+    padding-right: 120px;
+}
+.aloeapteka a:hover,
+.aloeapteka a:focus{
+    background-image: url('../img/logo-aloeapteka.png');
+    background-repeat: no-repeat;  
+}
+.onlinetrade a{
+    background-image: url('../img/logo-onlinetrade-dark.png');
+    background-repeat: no-repeat; 
+    padding-bottom: 50px;
+    padding-right: 50px; 
+}
+.onlinetrade a:hover,
+.onlinetrade a:focus{
+    background-image: url('../img/logo-onlinetrade.png');
+    background-repeat: no-repeat;  
+}
+.aptekaru a{
+    background-image: url('../img/logo-aptekaru-dark.png');
+    background-repeat: no-repeat;  
+    padding-bottom: 50px;
+    padding-right: 0px; 
+}
+.aptekaru a:hover,
+.aptekaru a:focus{
+    background-image: url('../img/logo_aptekaru.png');
+    background-repeat: no-repeat;  
+}
+.aptekaru-kz a{
+    background-image: url('../img/logo-aptekaru-kz-dark.png');
+    background-repeat: no-repeat;  
+    padding-bottom: 50px;
+    padding-right: 0px;
+}
+.aptekaru-kz a:hover,
+.aptekaru-kz a:focus{
+    background-image: url('../img/logo-aptekaru-kz.png');
+    background-repeat: no-repeat;  
+}
+.europharma a{
+    background-image: url('../img/logo-europharma-dark.png');
+    background-repeat: no-repeat;  
+    padding-bottom: 50px;
+    padding-right: 150px;
+}
+.europharma a:hover,
+.europharma a:focus{
+    background-image: url('../img/logo-europharmaru.png');
+    background-repeat: no-repeat;  
+}
+.biosfera a{
+    background-image: url('../img/logo-biosfea-dark.png');
+    background-repeat: no-repeat; 
+    padding-bottom: 50px;
+    padding-right: 150px; 
+}
+.biosfera a:hover,
+.biosfera a:focus{
+    background-image: url('../img/logo-biosfera.png');
+    background-repeat: no-repeat;  
+}
+.neman a{
+    background-image: url('../img/logo-heman-dark.png');
+    background-repeat: no-repeat; 
+    padding-bottom: 50px;
+    padding-right: 100px;  
+}
+.neman a:hover,
+.neman a:focus{
+    background-image: url('../img/logo-heman.png');
+    background-repeat: no-repeat;  
+}
+.footer{
+    display: flex;
+    box-sizing: border-box;
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 80px;
+    padding-left: 140px;
+    padding-right: 210px;
+    padding-bottom: 100px;
+    background-color: #2b2b2f;
+}
+.wrapper-copyrite{
+    width: 268px;
+    margin-left: 50px;
+}
+.wrapper-contacts{
+    width: 200px;
+    margin-left: auto;
+}
+.footer p,
+.footer a{
+    color: #e5e9f2;
+}
+.footer .address{
+    color: #838388;
+}
